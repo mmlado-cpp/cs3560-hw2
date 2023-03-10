@@ -6,12 +6,17 @@ public interface SaleableItem {
 }
 
 class Magazine implements SaleableItem {
+    public Magazine() {
+    }
+
     public void sellCopy() {
         System.out.println("Magazine sold");
     }
 }
 
 class Ticket implements SaleableItem {
+    public Ticket() {
+    }
     public void sellCopy() {
         System.out.println("Ticket sold");
     }
