@@ -46,12 +46,11 @@ public class Student {
     }
 
     public String toString() {
-        //return "Name: " + name + "\nMajor: " + major +  "\ngpa: " + gpa;
         return String.format("Name: %s\nMajor: %s\ngpa: %.2f", name, major, gpa);
     }
 
     public boolean equals(Student student) {
-        if (this.name.equals(student.name) && this.major.equals(student.major)) {
+        if (this.name.equals(student.getName()) && this.major.equals(student.getMajor())) {
             return true;
         }
 
